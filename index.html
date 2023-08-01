@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clone Netflix</title>
+  <link rel="stylesheet" href="./src/styles.css">
+  <link rel="stylesheet" href="./src/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="app__background">
+    <div class="app__content">
+      <header>
+        <nav class="navigation">
+          <div class="navigation-left">
+            <img class="logo" src="./assets/images/banner/logo1.png" alt="Logo da Netflix"/>
+            <ul class="menu-list">
+              <li><a>Início</a></li>
+              <li><a>Séries</a></li>
+              <li><a>Filmes</a></li>
+              <li><a>Em alta</a></li>
+              <li><a>Minha lista</a></li>
+            </ul>
+          </div>
+          <div class="navigation-right">
+            <ul class="user-navigation">
+              <li><img class="icone" src="./assets/images/icons/search.svg" alt="Ícone de lupa"/></li>
+              <li><img class="icone" src="./assets/images/icons/notifications.svg" alt="Ícone de sino"/></li>
+              <li>
+                <div class="user-menu">
+                  <img class="avatar" src="./assets/images/user1.png" alt="Avatar do usuário"/>
+                  <img src="./assets/images/icons/dropdown.svg" alt="dropdown: seta para baixo"/>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="banner">
+          <div class="banner-container">
+            <img class="banner-title" src="./assets/images/banner/poster1.png"
+              alt="Título do banner: filme - Spiderhead" />
+            <p class="banner-content">
+              Em uma penitenciária de última geração, um detento participa de um experimento com drogas que controlam as
+              emoções para um gênio da indústria farmacêutica.
+            </p>
+            <div class="banner_buttons">
+              <button class="play-button">
+                <img src="./assets/images/icons/play_arrow.svg" alt="Ícone de play" />
+                <span class="description-button">Assistir</span>
+              </button>
+              <button class="info-button">
+                <img src="./assets/images/icons/info.svg" alt="Ícone de informações" />
+                <span class="description-button">Mais informações</span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="gallery">
+          <div class="category">
+            <p class="category-title">Meus favoritos</p>
+            <div class="carousel">
+              <div class="carousel-item -animation"><img src="./assets/images/myList/poster_01.jpg" alt="Poster Bojack Horseman"/></div>
+              <div class="carousel-item -animation"><img src="./assets/images/myList/poster_02.jpg" alt="Poster Ozark"/></div>
+              <div class="carousel-item -animation"><img src="./assets/images/myList/poster_03.jpg" alt="Poster A vizinha da mulher na janela"/></div>        
+              <div class="carousel-item -animation"><img src="./assets/images/myList/poster_04.jpg" alt="Poster Breaking Bad"/></div>
+              <div class="carousel-item -animation"><img src="./assets/images/myList/poster_05.jpg" alt="Poster The end of the F***ing World"/></div>
+            </div>
+          </div>
+          <div class="category">
+            <p class="category-title">Top 10</p>
+            <div class="carousel">
+              <div class="carousel-item -animation"><img src="./assets/images/top10/poster_01.jpg" alt="Poster Stranger Things"/></div>
+              <div class="carousel-item -animation"><img src="./assets/images/top10/poster_02.jpg" alt="The Umbrella Academy"/></div>
+              <div class="carousel-item -animation"><img src="./assets/images/top10/poster_03.jpg" alt="Poster Peaky Blinders"/></div>
+              <div class="carousel-item -animation"><img src="./assets/images/top10/poster_04.jpg" alt="Poster Arremessando alto"/></div>
+              <div class="carousel-item -animation"><img src="./assets/images/top10/poster_05.jpg" alt="Poster Amor e Gelato"/></div>
+            </div>
+          </div>
+          <div class="category">
+            <p class="category-title">Séries</p>
+            <div class="carousel">
+              <div class="carousel-item -animation"><img src="./assets/images/series/poster_01.jpg" alt="Poster Stranger Things"/></div>
+              <div class="carousel-item -animation"><img src="./assets/images/series/poster_02.jpg" alt="The Umbrella Academy"/></div>
+              <div class="carousel-item -animation"><img src="./assets/images/series/poster_03.jpg" alt="Poster Peaky Blinders"/></div>
+              <div class="carousel-item -animation"><img src="./assets/images/series/poster_05.jpg" alt="Poster Arremessando alto"/></div>
+              <div class="carousel-item -animation"><img src="./assets/images/series/poster_06.jpg" alt="Poster Amor e Gelato"/></div>
+            </div>
+          </div>
+
+          
+        </section>
+      </main>
+
+      <footer>
+
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
