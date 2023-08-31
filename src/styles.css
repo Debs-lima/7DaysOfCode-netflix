@@ -160,23 +160,73 @@ body {
 .carousel {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(5, 20%);
   margin: 18px 0;
   grid-template-rows: 150px;
+  gap: 8px;
+  
+  
 }
 
+/* esconder-scrollbar IE and Edge */
+/* Firefox */
+
+
+.scroll {
+  grid-template-rows: auto;
+}
+/*
+.rolling::-webkit-scrollbar {
+  display: none;
+}
+*/
+
 .carousel-item {
-  align-self: center;
+  place-self: center;
   transition: all 200ms;
 }
 
 .carousel-item img {
-  max-width: 100%;
-  padding-right: 8px;
+  width: 100%;
 }
 
-.-animation img:hover {
+.-animation:hover {
   cursor: pointer;
-  height: 150px;
-  filter:drop-shadow(0 0 4px rgba(109, 109, 110, 0.7));
+  scale: 1.2;
+  margin: 0 20px;
+  /*filter:drop-shadow(0 0 4px rgba(109, 109, 110, 0.7));*/
 }
+
+/*BOTÃO CARROSSEL*/
+
+
+.control {
+  background-color: transparent;
+  border: none;
+  height: 170px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  opacity: 0.5;
+  align-self: center;
+}
+
+.arrow-left {
+  position: absolute;
+  left: 0;
+  margin-left: 3rem;
+  z-index: 5;
+  background: linear-gradient(to left, transparent 0%, black 150%);
+}
+
+.arrow-right {
+  position: absolute;
+  right: 0;
+  margin-right: 3rem;
+  z-index: 5;
+  background: linear-gradient(to right, transparent 0%, black 150%);
+}
+
+.arrow-left:hover,
+  .arrow-right:hover {
+    opacity: 1;
+  }
