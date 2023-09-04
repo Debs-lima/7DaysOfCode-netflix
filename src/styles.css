@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: black;
   min-width: 360px;
+  color: grey;
 }
 
 .app__background {
@@ -48,7 +49,6 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   list-style: none;
-  color: #e5e5e5;
   font-family: inherit;
   font-size: 14px;
 }
@@ -57,10 +57,6 @@ body {
  .user-navigation li {
   cursor: pointer;
   white-space: nowrap;
-}
-
-.menu-list li:hover {
-  color: rgba(255, 255, 255, 0.8);
 }
 
 .navigation-right {
@@ -82,7 +78,18 @@ body {
 }
 
 .avatar {
-  width: 24px;
+  width: 32px;
+  border-radius: 2px;
+}
+
+a {
+  color: inherit;
+}
+
+.menu-list li:hover,
+  .user-navigation svg:hover {
+  color: rgba(255, 255, 255, 0.8);
+  fill: rgba(255, 255, 255, 0.8);
 }
 
 /*BANNER*/
@@ -134,15 +141,15 @@ body {
   background-color: rgba(109, 109, 110, 0.7);
 }
 
-.info-button:hover {
-  background-color: rgba(109, 109, 110, 0.5);
-}
-
 .description-button {
   width: 100%;
   margin-left: 4px;
   font-weight: 700;
   font-size: 18px;
+}
+
+.info-button:hover {
+  background-color: rgba(109, 109, 110, 0.5);
 }
 
 /*CARROSSEL*/
@@ -160,26 +167,11 @@ body {
 .carousel {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(5, auto);
   margin: 18px 0;
   grid-template-rows: 150px;
   gap: 8px;
-  
-  
 }
-
-/* esconder-scrollbar IE and Edge */
-/* Firefox */
-
-
-.scroll {
-  grid-template-rows: auto;
-}
-/*
-.rolling::-webkit-scrollbar {
-  display: none;
-}
-*/
 
 .carousel-item {
   place-self: center;
@@ -193,40 +185,132 @@ body {
 .-animation:hover {
   cursor: pointer;
   scale: 1.2;
-  margin: 0 20px;
-  /*filter:drop-shadow(0 0 4px rgba(109, 109, 110, 0.7));*/
+  margin: 0 40px;
 }
+
+/*CARROSSEL MÓVEL*/
+.scroll {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+#section1,
+  #section2,
+    #section3 {
+      position: relative;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      margin: 20px 0;
+      
+    }
+
 
 /*BOTÃO CARROSSEL*/
 
-
-.control {
-  background-color: transparent;
-  border: none;
-  height: 170px;
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-  opacity: 0.5;
+.arrow-button {
+  height: 200px;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  width: 80px;
+  padding: 65px 20px;
   align-self: center;
+  z-index: 1;
 }
 
-.arrow-left {
+.arrow {
+  opacity: 0.6;
+  width: 100%;
+}
+
+.arrow-button:first-of-type {
   position: absolute;
   left: 0;
-  margin-left: 3rem;
-  z-index: 5;
-  background: linear-gradient(to left, transparent 0%, black 150%);
+  background: linear-gradient(
+    -90deg,
+    transparent 0%,
+    black 100%
+  );
 }
 
-.arrow-right {
+.arrow-button:last-of-type {
   position: absolute;
   right: 0;
-  margin-right: 3rem;
-  z-index: 5;
-  background: linear-gradient(to right, transparent 0%, black 150%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 100%
+  );
 }
 
-.arrow-left:hover,
-  .arrow-right:hover {
+.arrow:hover {
     opacity: 1;
   }
+
+/*FOOTER*/
+footer {
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.social-medias {
+  display: flex;
+}
+
+.social-medias ul {
+  display: flex;
+}
+
+.media {
+  padding-right: 32px;
+}
+
+.interprise-infos {
+  margin-top: 32px;
+}
+
+.interprise-infos ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 8px 16px;
+}
+
+.interprise-infos li {
+  padding: 2px;
+}
+
+.codigo {
+  margin-top: 32px;
+  
+}
+
+.codigo a {
+  border: solid 1px grey;
+  padding: 8px;
+  width: 100%;
+  display: inline;
+}
+
+.copyright {
+  margin-top: 32px;
+  padding-bottom: 12px;
+}
+
+a > svg:hover {
+  fill:  rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.interprise-infos li:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+
+.codigo a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.8);
+}
