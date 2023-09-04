@@ -36,7 +36,7 @@ Desenvolver o menu de navegação do site.
 
 **Objetivo**
 <br>
-Criar o trilho de “Minha lista”.
+Criar o trilho de “Minha lista”, utilizando GRID.
 
 ### Dia 4
 <hr>
@@ -44,3 +44,24 @@ Criar o trilho de “Minha lista”.
 **Objetivo**
 <br>
 Crie uma feature para destacar algum item quando o mouse está sobre o mesmo.
+
+### Dia 5
+<hr>
+
+**Objetivo**
+<br>
+No terceiro Trilho de categorias fazer o efeito de slide.
+
+### Dia 6
+<hr>
+
+**Objetivo**
+<br>
+Desenvolver o footer.
+
+### Dia 7
+<hr>
+
+**Objetivo**
+<br>
+Deploy da página
