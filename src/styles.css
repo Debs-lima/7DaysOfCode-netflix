@@ -14,7 +14,7 @@ body {
     rgba(0, 0, 0, 0.2) 80%,
     rgba(0, 0, 0, 1) 100%
   ),
-    url(/assets/images/banner/banner1.png);
+    url(../assets/images/banner/banner1.png);
   background-size: cover;
 }
 
